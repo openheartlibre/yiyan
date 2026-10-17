@@ -1,0 +1,5 @@
+/* Name shown in the input source list and the input method menu */
+CFBundleName = "Yiyan";
+CFBundleDisplayName = "Yiyan";
+/* Input mode display name, keyed by the mode ID in Info.plist */
+"app.yiyan.inputmethod.Hans" = "Yiyan";

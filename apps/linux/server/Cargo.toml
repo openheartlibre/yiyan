@@ -1,0 +1,30 @@
+[package]
+name = "yiyan-linux-server"
+description = "Linux Fcitx5 输入法的 Rust Server"
+version = "0.1.5-dev"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "yiyan-linux-server"
+path = "src/main.rs"
+
+[dependencies]
+yiyan-core.workspace = true
+yiyan-dictionary.workspace = true
+yiyan-learning.workspace = true
+yiyan-lm.workspace = true
+yiyan-neural.workspace = true
+yiyan-platform.workspace = true
+yiyan-translate.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+tracing-appender.workspace = true
+libc = "0.2.189"
+
+[lints]
+workspace = true

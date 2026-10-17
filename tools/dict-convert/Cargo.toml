@@ -1,0 +1,25 @@
+[package]
+name = "yiyan-dict-convert"
+description = "产品数据生成：词库、语言模型、英文词表、语料挖词与 .qj 打包"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+clap.workspace = true
+jiff.workspace = true
+yiyan-core.workspace = true
+yiyan-dictionary.workspace = true
+yiyan-format.workspace = true
+yiyan-lm.workspace = true
+yiyan-neural.workspace = true
+yiyan-translate.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[lints]
+workspace = true
