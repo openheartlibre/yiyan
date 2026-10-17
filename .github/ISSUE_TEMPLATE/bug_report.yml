@@ -16,7 +16,7 @@ body:
       options:
         - label: 已搜索过现有 issue（包括已关闭的），没有重复
           required: true
-        - label: 已查过[使用说明](https://yiyan.app/docs)，里面没有答案
+        - label: 已查过[使用说明](https://github.com/openheartlibre/yiyan/tree/main/docs/user)，里面没有答案
           required: true
   - type: dropdown
     id: platform
@@ -90,5 +90,5 @@ body:
       description: |
         先贴「设置 → 关于 → 复制诊断信息」的内容（版本、系统、配置，密钥会被抹去）。
         日志文件：macOS 在「关于 → 打开日志目录」里取当天的；Windows 点「关于 → 打包日志到桌面」，把 zip 拖进来作为附件。
-        目录位置见 https://yiyan.app/docs/help/data-and-logs 。缺省级别不含输入内容。
+        目录位置见 https://github.com/openheartlibre/yiyan/blob/main/docs/user/help/data-and-logs.md 。缺省级别不含输入内容。
       render: text
