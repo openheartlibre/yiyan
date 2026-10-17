@@ -7,8 +7,8 @@
 <p align="center"><strong>好好打字，顺手多记一个词。</strong></p>
 
 <p align="center">
-  <a href="https://yiyan.app/download"><img src="https://img.shields.io/github/v/release/yiyan-team/yiyan?label=stable" alt="正式版"></a>
-  <a href="https://github.com/yiyan-team/yiyan/stargazers"><img src="https://img.shields.io/github/stars/yiyan-team/yiyan?style=flat&amp;label=Stars" alt="GitHub 星标"></a>
+  <a href="https://yiyan.app/download"><img src="https://img.shields.io/badge/status-beta-orange" alt="测试阶段"></a>
+  <a href="https://github.com/openheartlibre/yiyan/stargazers"><img src="https://img.shields.io/github/stars/openheartlibre/yiyan?style=flat&amp;label=Stars" alt="GitHub 星标"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT 协议"></a>
   <a href="https://yiyan.app/docs/getting-started/install"><img src="https://img.shields.io/badge/macOS-13%2B-blue" alt="macOS 13 及以上"></a>
   <a href="https://yiyan.app/docs/getting-started/install"><img src="https://img.shields.io/badge/Windows-10%2F11-blue" alt="Windows 10/11"></a>
@@ -29,9 +29,9 @@ macOS 与 Windows 版目前属于测试阶段。装好后先把易言设为当�
 ## 打字时的界面
 
 ```text
-1  hello        bonjour
-2  world        monde
-3  thanks       merci
+1  你好         hello
+2  世界         world
+3  谢谢         thanks
 ```
 
 候选旁同一时间只展示一门学习语言的译词。当前可选英语、日语、西班牙语，也能把译词关掉。除此之外，易言还提供整句输入、简拼、拼写纠错、双拼、五笔等打法；本地整句模型会在你停顿时重新排序句候选。
@@ -47,7 +47,7 @@ macOS 与 Windows 版目前属于测试阶段。装好后先把易言设为当�
 ## 文档、反馈与参与开发
 
 - [使用文档](https://yiyan.app/docs)：涵盖安装、设置、输入、卸载与常见问题。
-- [反馈问题或建议](https://github.com/yiyan-team/yiyan/issues/new/choose)；也可加入 [QQ 内测交流群](https://qm.qq.com/q/jBvn2gGTxm)。
+- [反馈问题或建议](https://github.com/openheartlibre/yiyan/issues/new/choose)；也可加入 [QQ 内测交流群](https://qm.qq.com/q/jBvn2gGTxm)。
 - 想一起开发？从[开发文档](docs/)和[开发约定](docs/contributing.md)入手。
 
 易言仅在[官方渠道](https://yiyan.app/download)免费提供。代码以 [MIT](LICENSE) 协议开放；项目名称与 logo 不在代码授权范围内。随包附带的数据各有来源与许可，详见[数据来源清单](docs/design/landscape.md)。
