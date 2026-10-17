@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 让官网（yiyan-team/yiyan-web，Cloudflare Workers Builds 按仓库提交自动构建）重新构建：
+# 让官网仓库（${YIYAN_WEB_REPO}，Cloudflare Workers Builds 按仓库提交自动构建）重新构建：
 # 往它的 src/content/upstream.json 写一笔「本次发版的标签 / 文档提交」并推一个提交（文件名沿用官网旧约定）。
 # 官网构建时拉最新 Release 的 releases.json，文档按记下的提交号拉主仓库 docs/user；只在发版时调用，文档只随发版更新。
 #
@@ -8,7 +8,7 @@
 set -euo pipefail
 
 token=${YIYAN_WEB_TOKEN:?缺 YIYAN_WEB_TOKEN}
-repo=${YIYAN_WEB_REPO:-yiyan-team/yiyan-web}
+repo=${YIYAN_WEB_REPO:?缺 YIYAN_WEB_REPO}
 sha=${GITHUB_SHA:-$(git rev-parse HEAD)}
 tag=${GITHUB_REF_NAME:?缺 GITHUB_REF_NAME（版本标签）}
 
@@ -36,6 +36,6 @@ if git diff --cached --quiet; then
   echo "官网仓库无需更新"
   exit 0
 fi
-git -c user.name="yiyan-ci" -c user.email="ci@yiyan.app" commit -q -m "$message" -m "主仓库提交 ${sha}"
+git -c user.name="yiyan-ci" -c user.email="ci@users.noreply.github.com" commit -q -m "$message" -m "主仓库提交 ${sha}"
 git push -q origin HEAD
 echo "已推送到 ${repo}：${message}"

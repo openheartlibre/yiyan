@@ -45,14 +45,14 @@ pub const ATTRIBUTIONS: &[(&str, &str)] = &[
     ),
 ];
 
-/// 官网。
-pub const WEBSITE_URL: &str = "https://yiyan.app";
+/// 项目主页。
+pub const WEBSITE_URL: &str = "https://github.com/openheartlibre/yiyan";
 
 /// 源码与问题反馈。
-pub const REPOSITORY_URL: &str = "https://github.com/yiyan-team";
+pub const REPOSITORY_URL: &str = "https://github.com/openheartlibre/yiyan";
 
 /// 隐私说明。
-pub const PRIVACY_NOTE: &str = "易言不上传任何数据。开着「自动检查更新」时每天向官网读一次版本列表，请求不带任何标识，上面可以关。开着云联想或翻译时，光标附近的文字与拼音会发给你在「云服务」页填的 AI 服务商（缺省 DeepSeek）的服务器，不经过作者。「高级」页的输入日志只写在这台电脑的数据目录里，可以关掉或清空。";
+pub const PRIVACY_NOTE: &str = "易言不上传任何数据。开着「自动检查更新」时每天向发布站点读一次版本列表，请求不带任何标识，上面可以关。开着云联想或翻译时，光标附近的文字与拼音会发给你在「云服务」页填的 AI 服务商（缺省 DeepSeek）的服务器，不经过作者。「高级」页的输入日志只写在这台电脑的数据目录里，可以关掉或清空。";
 
 /// 反馈方式。
 pub const FEEDBACK_NOTE: &str = "遇到问题点「打包日志到桌面」，把生成的 zip 发给作者即可（含日志与配置文件，不含密钥），再附上「复制诊断信息」的内容。缺省日志不含你敲的内容；排查排序问题时作者可能请你在「高级」页临时打开详细日志。";

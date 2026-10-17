@@ -80,7 +80,7 @@ if [[ -f data/generated/dict.tsv || -f data/generated/dict.qj ]]; then
   if [[ -f data/generated/dict.tsv && ( ! -f data/generated/dict.qj || data/generated/dict.tsv -nt data/generated/dict.qj ) ]]; then
     cargo run --release -q -p yiyan-dict-convert -- pack dict --name "易言基础词库" \
       --license "MIT AND Unicode-3.0" --attribution "通用规范汉字表；现代汉语常用词表（liuxilu 校对版）；THUOCL（清华大学自然语言处理实验室，MIT）；读音 Unihan（Unicode）" \
-      --source https://github.com/yiyan-team/yiyan/tree/main/assets/lexicon
+      --source https://github.com/openheartlibre/yiyan/tree/main/assets/lexicon
   fi
   if [[ -f data/generated/lm-bigram.tsv && ( ! -f data/generated/lm.qj || data/generated/lm-bigram.tsv -nt data/generated/lm.qj ) ]]; then
     cargo run --release -q -p yiyan-dict-convert -- pack lm --name "易言语言模型（中文维基 + LCCC，易言词库分词）" \

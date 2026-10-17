@@ -10,9 +10,9 @@ use crate::panel::{Message, Settings};
 /// YIYAN_VERSION 由 build.rs 给：-dev 版接 git 短哈希。
 pub(crate) const VERSION: &str = env!("YIYAN_VERSION");
 
-pub(crate) const WEBSITE_URL: &str = "https://yiyan.app";
+pub(crate) const WEBSITE_URL: &str = "https://github.com/openheartlibre/yiyan";
 
-pub(crate) const REPOSITORY_URL: &str = "https://github.com/yiyan-team";
+pub(crate) const REPOSITORY_URL: &str = "https://github.com/openheartlibre/yiyan";
 
 /// 与仓库根 `LICENSE` 一致。
 const LICENSE_NOTE: &str = "MIT 许可证：可以自由使用、修改与再分发；官方渠道免费。";

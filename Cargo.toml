@@ -19,7 +19,7 @@ members = [
 version = "0.1.1"
 edition = "2024"
 license = "MIT"
-repository = "https://github.com/yiyan-team/yiyan"
+repository = "https://github.com/openheartlibre/yiyan"
 
 [workspace.lints.clippy]
 all = "warn"

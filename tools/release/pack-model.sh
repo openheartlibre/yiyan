@@ -41,5 +41,5 @@ cargo run --release -q -p yiyan-dict-convert -- --out-dir "$MODEL_DIR" pack mode
   --output "$OUT" \
   --name "$name" --license "MIT" \
   --attribution "$attribution" \
-  --source "https://github.com/yiyan-team/yiyan" --data-version "$model_id-small"
+  --source "https://github.com/openheartlibre/yiyan" --data-version "$model_id-small"
 ls -la "$OUT"

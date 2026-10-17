@@ -8,7 +8,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 LOCK="$ROOT/tools/release/data.lock"
 OUT="$ROOT/target/release-data"
-REPO="yiyan-team/yiyan"
+REPO="openheartlibre/yiyan"
 ASSETS=(yiyan-data.tar.gz)
 cd "$ROOT"
 
